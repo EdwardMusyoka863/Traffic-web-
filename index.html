@@ -1,26 +1,69 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Traffic website</title>
-    <link href="style.css" type="text/css" rel="stylesheet"></link>
+<title>Website Traffic</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
+<script type="text/javascript">
+	// toggle dynamic divs
+    function toggle(div) {
+    	var elem = document.getElementById(div);
+    	if (elem.style.display=='') {elem.style.display='none'; return;}
+    	elem.style.display='';
+    }
+	</script>
 </head>
 <body>
-    <h1>
-        VEHICLE TRAFFIC ASSOCIATION(VTA)
-    </h1>
-    <div class="links">
-    <a>Home</a>
-    <a href="./Location.html">Location</a>
-    <a href="./updates.html">Updates</a>
-    <a href="./Information.html">Information</a>
-    <a href="./Statistics.html">Statistics</a>
+<div id="content">
+  <div id="header">
+    <div id="logo">
+      <h1>Website Traffic<sup> beta</sup></h1>
+      <p>This site give the users a chance to get the latest updates on the traffic levels within a certain region and they can be able to post any incidents occurring within a region</p>
     </div>
-
-
-
-
-
-
+    <div id="search"> <a onclick="toggle('searchform');">+ SEARCH</a>
+      <div id="searchform" style="display: none;">
+        <form method="post" action="#">
+          <p>
+            <input class="searchfield" name="search_query" id="keywords" value="Search Keywords" type="text" />
+            <input class="searchbutton" name="submit" value="Search" type="submit" />
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <ul id="menu">
+    <li><a class="current" href="#">Home</a></li>
+    <li><a href="#">Location</a></li>
+    <li><a href="#">UPdates</a></li>
+    <li><a href="#">Information</a></li>
+    <li><a href="#">Statistics</a></li>
+    <li><a href="#">Login</a></li>
+    <li><a id="last" href="#">Contact</a></li>
+  </ul>
+  <div style="clear: both;"></div>
+  <div class="third">
+    <h2>Who we are?</h2>
+    <p>We are the solution to traffic congestion in city<br/>Are you tired of staying in traffic for hour?<br/>Are you tired of waking up early inorder to get to work in time?<br/>We are the solution to these daily problem<br/>We organize the traffic within cities by advising the road users to avoid such hot spots</p>
+    <p class="more"><a href="#">Read More</a></p>
+  </div>
+  <div class="third">
+    <h2>What we do?</h2>
+    <p>This Website is designed to update the people on the current situation within a certain region. We update incidents such as:<br/>-Accidents<br/>-Flooded regions<br/>-Black spots</p>
+    <p class="more"><a href="#">Read More</a></p>
+  </div>
+  <div class="third last">
+    <h2>Get in touch!</h2>
+    <p>This Website is available in playstore, apple store and windows store<br/></p>
+    <p class="more"><a href="#">Read More</a></p>
+  </div>
+  <div style="clear: both;"></div>
+</div>
+<!-- <div id="prefooter">
+  <p>Powered by Truck Accident Lawyers &middot; Davis &amp; McCabe</p>
+</div> -->
+<div id="footer">
+  <p class="right"><a href="#">Sitemap</a><a href="#">Contact</a></p>
+  <p>© Copyright 2018, <a href="#">Website Traffic</a>, Design: <a><b>Nick</b>Bulali</a></p>
+</div>
 </body>
-
 </html>
